@@ -1,0 +1,12 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/inzamamul-haque/config-git-repo
+          clone-on-start: true
